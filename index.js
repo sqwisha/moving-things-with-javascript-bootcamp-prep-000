@@ -4,8 +4,11 @@ document.addEventListener('keydown', function(e) {
 	console.log(e.which);
 })
 
-
-
+document.addEventListener('keydown', function(e) {
+	if (e.which === 37) {
+		moveDodgerLeft();
+    }
+});
 
 function moveDodgerRight() {
 	var leftNumbers = dodger.style.left.replace('px', '');
